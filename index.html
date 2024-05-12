@@ -21,17 +21,17 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 var map = new kakao.maps.Map(mapContainer, mapOption); 
 
 
-var MarkerPos = new kakao.maps.LatLng(,)
-var Marker = new kakao.maps.marker(
-    (position:MarkerPos)
+var markerPos = new kakao.maps.LatLng(33.450701, 126.570667)
+var marker = new kakao.maps.marker(
+    (position:markerPos)
 )
-function setCenter(Lat, Lng)
+function setCenter(lat, lng)
 {
-    Marker.setMap(null)
-    var mp = new kakao.maps.latlng(Lat,Lng)
+    marker.setMap(null)
+    var mp = new kakao.maps.LatLng(lat,lng)
     map.setCenter(mp)
-    Makrer = new kakao.maps.Marker({position:mp})
-    Marker.setmap(map)
+    makrer = new kakao.maps.Marker({position:mp})
+    marker.setMap(map)
 }
 </script>
 </body>
