@@ -14,24 +14,24 @@
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     mapOption = { 
         center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-        level: 17 // 지도의 확대 레벨
+        level: 3 // 지도의 확대 레벨
     };
 
 // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
 var map = new kakao.maps.Map(mapContainer, mapOption); 
 
 
-var markerPos = new kakao.maps.LatLng(,)
-var marker = new kakao.maps.marker(
-    (position:markerPos)
+var MarkerPos = new kakao.maps.LatLng(,)
+var Marker = new kakao.maps.marker(
+    (position:MarkerPos)
 )
-function setCenter(Lar, lng)
+function setCenter(Lat, Lng)
 {
-    marker.setMap(null)
-    var mp = new kakao.maps.latlng(lat,lng)
+    Marker.setMap(null)
+    var mp = new kakao.maps.latlng(Lat,Lng)
     map.setCenter(mp)
-    makrer = new kakao.maps.Marker({position:mp})
-    marker.setmap(map)
+    Makrer = new kakao.maps.Marker({position:mp})
+    Marker.setmap(map)
 }
 </script>
 </body>
